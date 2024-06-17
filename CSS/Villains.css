@@ -51,7 +51,7 @@ img:hover {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-image: 'media/backgroundmodal.png';
     margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
