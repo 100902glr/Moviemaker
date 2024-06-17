@@ -5,16 +5,29 @@ body {
     background-attachment: fixed;
 }
 
-.voertuig {
+.voertuig, .computer, .armory, .villains {
     position: absolute;
     left: 8%;
+    transition: filter 0.3s;
+}
+
+.voertuig {
     top: 15%;
 }
 
-a:hover{
+.computer {
+    top: 25%;
+}
+
+.armory {
+    top: 35%;
+}
+
+.villains {
+    top: 45%;
+}
+
+/* Apply the hover effect to the img elements directly */
+.voertuig:hover, .computer:hover, .armory:hover, .villains:hover {
     filter: drop-shadow(0px 0px 25px #0f1bbd);
-    position: absolute;
-    left: 8%;
-    top: 15%;
-    transition: 0.3s;
 }
