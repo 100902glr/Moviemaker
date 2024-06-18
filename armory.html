@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman Armory</title>
+    <link rel="stylesheet" href="CSS/armory.css">
+</head>
+<body>
+    <header>
+        <div class="titel">
+            <h1>BATMAN ARMORY</h1></div>
+            <div class="logo">
+            <a href="Home.html">
+                <h1>BACK TO HOMEPAGE</h1>
+            </a>
+    
+        </div>
+    </header>
+    <main>
+        <div class="armory-item" id="batarang">
+            <img src="media/batarang.png" alt="Batarang">
+            <h2>Batarang</h2>
+            <p>The Batarang is a bat-shaped throwing weapon used by Batman.</p>
+            <div class="button-container">
+                <button class="details-button" onclick="showDetails('batarang')">More Details</button>
+            </div>
+        </div>
+        <div class="armory-item" id="grappling-hook">
+            <img src="media/grappling.png" alt="Grappling Hook">
+            <h2>Grappling Hook</h2>
+            <p>The grappling hook allows Batman to scale buildings and swing between structures.</p>
+            <div class="button-container">
+                <button class="details-button" onclick="showDetails('grappling-hook')">More Details</button>
+            </div>
+        </div>
+        <div class="armory-item" id="cape">
+            <img src="media/cape.png" alt="Cape">
+            <h2>Cape</h2>
+            <p>The cape helps Batman in his mission against evil persons.</p>
+            <div class="button-container">
+                <button class="details-button" onclick="showDetails('cape')">More Details</button>
+            </div>
+        </div>
+        <div class="armory-item" id="smoke-pellets">
+            <img src="media/smokebomb.png" alt="Smoke Pellets">
+            <h2>Smoke Pellets</h2>
+            <p>Smoke pellets are used by Batman to create a smokescreen, providing cover for escape or to disorient enemies.</p>
+            <div class="button-container">
+                <button class="details-button" onclick="showDetails('smoke-pellets')">More Details</button>
+            </div>
+        </div>
+        <div class="armory-item" id="gel">
+            <img src="media/gel.png" alt="Explosive Gel">
+            <h2>Explosive Gel</h2>
+            <p>The Explosive Gel is used by Batman to create controlled explosions and incapacitate enemies.</p>
+            <div class="button-container">
+                <button class="details-button" onclick="showDetails('gel')">More Details</button>
+            </div>
+        </div>
+        <div class="armory-item" id="shockglove">
+            <img src="media/glove.png" alt="Shockglove">
+            <h2>Shockglove</h2>
+            <p>The Shockglove is used by Batman to deliver electric shocks to enemies.</p>
+            <div class="button-container">
+                <button class="details-button" onclick="showDetails('shockglove')">More Details</button>
+            </div>
+        </div>
+    </main>
+    <div class="footer">
+        <div class="battery-status">
+            <h2>Batmobile Battery Status</h2>
+            <div class="battery">
+                <div class="battery-level"></div>
+            </div>
+        </div>
+    </div>
+    <div id="details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDetails()">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+    <script src="JavaScripts/armory.js"></script>
+</body>
+</html>
