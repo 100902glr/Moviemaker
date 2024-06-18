@@ -40,3 +40,22 @@ function clock(){
 
 }var inter = setInterval(clock,400);
 
+
+
+async function fetchGothamNews() {
+  const gothamNews = [
+      { title: 'Batman Foils Bank Robbery, Saves Hostages', url: '#' },
+      { title: 'Mysterious Sightings of the Batmobile Around Gotham', url: '#' },
+      { title: 'Gotham PD and Batman Team Up to Capture Riddler', url: '#' }
+  ];
+
+  const newsFeed = document.getElementById('gotham-news-feed');
+  gothamNews.forEach(article => {
+      const li = document.createElement('li');
+      li.innerHTML = `<a href="${article.url}" target="_blank">${article.title}</a>`;
+      newsFeed.appendChild(li);
+  });
+}
+
+fetchGothamNews();
+

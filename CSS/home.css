@@ -88,3 +88,48 @@ body{
     right: 2%;
     
   }
+
+  /* CSS/home.css */
+
+ .missions, .gotham-news {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+
+.missions h2, .gotham-news h2 {
+  margin-top: 0;
+}
+
+.missions ul, .gotham-news ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.missions li, .gotham-news li {
+  margin: 5px 0;
+}
+
+.gotham-news li a {
+  color: #00f;
+  text-decoration: none;
+}
+
+.gotham-news li a:hover {
+  text-decoration: underline;
+}
+
+.missions {
+  position: absolute;
+  top: 52%;
+  right: 5%;
+}
+
+.gotham-news {
+  position: absolute;
+  top: 80%;
+  right: 5%;
+}
