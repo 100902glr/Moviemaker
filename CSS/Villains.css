@@ -58,7 +58,7 @@ body {
     background-image: url("../media/backgroundmodal.png");
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 4px solid #53a7e8;
     width: 60%;
     max-width: 420px;
     overflow: auto;
