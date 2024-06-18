@@ -25,7 +25,7 @@ body {
 .column {
     flex: 1 1 calc(33.333% - 20px);
     box-sizing: border-box;
-    padding: 10px;
+    padding: 5px;
 }
 
 .column img {
@@ -91,27 +91,35 @@ body {
     margin-top: 20px;
 }
 
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .column {
+        flex: 1 1 calc(50% - 20px); /* Two columns on tablets */
+    }
+}
+
 @media screen and (max-width: 768px) {
     .column {
-        flex: 1 1 calc(50% - 20px);
+        flex: 1 1 calc(50% - 20px); /* Two columns on smaller tablets */
     }
 
     .modal-content {
-        width: 90%;
+        width: 90%; /* Adjusted width for smaller screens */
     }
 }
 
 @media screen and (max-width: 480px) {
     .column {
-        flex: 1 1 100%;
+        flex: 1 1 100%; /* Full width on phones */
     }
 
     .modal-content {
-        width: 100%;
+        width: 100%; /* Full width for modal content on phones */
     }
 }
 
-p{
-    color:white;
-    text-shadow: 2px 2px black;
+/* Additional styling for text and links */
+p {
+    color: white;
+    text-shadow: 2px 2px black; /* Text shadow for readability */
 }
