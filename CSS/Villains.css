@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 body {
+    font-family: 'Orbitron', sans-serif;
     background-image: url("../media/background.png");
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: Arial, sans-serif;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
 }
@@ -30,7 +32,7 @@ body {
     width: 420px;
     height: 520px;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: transform 0.2s ease-in-out;
 }
 
 .column img:hover {
