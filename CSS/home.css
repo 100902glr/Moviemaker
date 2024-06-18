@@ -1,9 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
 body {
-    background-image: url(../media/background.png);
+    background-image: url('../media/background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0f0f;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clock {
+  display: block;
+    border: 2px solid #0075cc;
+    color: #53a7e8;
+    padding: 30px 50px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #121212, #1c1c1c);
+    box-shadow: 10px 10px 20px #0a0a0a, -10px -10px 20px #262626;
+    text-align: center;
+    
+}
+
+#Date {
+    font-size: 20px !important;
+    margin-bottom: 10px;
+}
+
+.clock ul {
+    list-style: none;
+    display: flex;
+    font-size: 50px;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.clock ul li {
+    position: relative;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #0075cc, 0 0 10px #0075cc, 0 0 20px #0075cc, 0 0 30px #0075cc, 0 0 40px #0075cc, 0 0 50px #0075cc, 0 0 60px #0075cc;
+    }
+    to {
+        text-shadow: 0 0 10px #0075cc, 0 0 20px #0075cc, 0 0 30px #0075cc, 0 0 40px #0075cc, 0 0 50px #0075cc, 0 0 60px #0075cc, 0 0 70px #0075cc;
+    }
 }
 
 .voertuig, .computer, .armory, .villains {
@@ -28,141 +83,118 @@ body {
     top: 45%;
 }
 
-/* Apply the hover effect to the img elements directly */
 .voertuig:hover, .computer:hover, .armory:hover, .villains:hover {
     filter: drop-shadow(0px 0px 25px #0f1bbd);
 }
 
-
-body{
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #0f0f0f;
-    font-family: 'Orbitron', sans-serif;
-    margin: 0;
-  }
-
-  .clock {
-    border: 2px solid #0075cc;
-    color: #53a7e8;
-    padding: 30px 50px;
-    border-radius: 20px;
-    background: linear-gradient(145deg, #121212, #1c1c1c);
-    box-shadow: 10px 10px 20px #0a0a0a, -10px -10px 20px #262626;
-    text-align: center;
-  }
-
-  #Date{
-    font-size: 20px !important;
-    margin-bottom: 10px;
-  }
-
-  .clock ul{
-    list-style: none;
-    display: flex;
-    font-size: 50px;
-    gap: 25px;
-    padding: 0;
-    margin: 0;
-  }
-
-  .clock ul li {
-    position: relative;
-    animation: glow 1.5s infinite alternate;
-  }
-
-  @keyframes glow {
-    from {
-      text-shadow: 0 0 5px #0075cc, 0 0 10px #0075cc, 0 0 20px #0075cc, 0 0 30px #0075cc, 0 0 40px #0075cc, 0 0 50px #0075cc, 0 0 60px #0075cc;
-    }
-    to {
-      text-shadow: 0 0 10px #0075cc, 0 0 20px #0075cc, 0 0 30px #0075cc, 0 0 40px #0075cc, 0 0 50px #0075cc, 0 0 60px #0075cc, 0 0 70px #0075cc;
-    }
-  }
-
-  .map{
+.map {
     position: absolute;
     top: 5%;
     right: 2%;
-    
-  }
-
-  /* CSS/home.css */
-
- .missions, .gotham-news {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 10px 0;
 }
 
-
-.missions h2, .gotham-news h2 {
-  margin-top: 0;
+.missions, .gotham-news, .gotham-weather, .batmobile-status, .crime-alerts, .bat-signal-status, .communication-logs, .batcave-security, .gadget-inventory {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid #444;
 }
 
-.missions ul, .gotham-news ul {
-  list-style-type: none;
-  padding-left: 0;
+.missions h2, .gotham-news h2, .gotham-weather h2, .batmobile-status h2, .crime-alerts h2, .bat-signal-status h2, .communication-logs h2, .batcave-security h2, .gadget-inventory h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #53a7e8;
+    border-bottom: 2px solid #0075cc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.missions li, .gotham-news li {
-  margin: 5px 0;
+.missions ul, .gotham-news ul, .crime-alerts ul, .communication-logs ul, .gadget-inventory ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.missions li, .gotham-news li, .crime-alerts li, .communication-logs li, .gadget-inventory li {
+    margin: 5px 0;
 }
 
 .gotham-news li a {
-  color: #00f;
-  text-decoration: none;
+    color: #00f;
+    text-decoration: none;
 }
 
 .gotham-news li a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
+/* For screens smaller than 768px (typical tablets and phones) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .clock {
+        padding: 20px;
+    }
+
+    .missions, .gotham-news, .gotham-weather, .batmobile-status, .crime-alerts, .bat-signal-status, .communication-logs, .batcave-security, .gadget-inventory {
+        width: 100%;
+        position: static;
+        margin-top: 20px;
+    }
+
+    .voertuig, .computer, .armory, .villains {
+        position: relative;
+        left: auto;
+        top: auto;
+        margin-top: 20px;
+    }
+
+    .map {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 20px;
+    }
+}
 .missions {
   position: absolute;
   top: 52%;
   right: 5%;
 }
 
-.gotham-news {
+.crime-alerts {
   position: absolute;
-  top: 80%;
+  top: 72%;
   right: 5%;
 }
 
-/* For screens smaller than 768px (typical tablets and phones) */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column; /* Stack elements vertically */
-    padding: 10px; /* Adjust spacing */
-  }
+.batmobile-status {
+  position: absolute;
+  left: 5%;
+  bottom: 37%;
+}
 
-  .clock {
-    padding: 20px; /* Adjust padding */
-  }
+.bat-signal-status {
+  position: absolute;
+  left: 5%;
+  bottom: 27%;
+}
 
-  .missions, .gotham-news {
-    width: 100%; /* Full width for these sections */
-    position: static; /* Reset positioning */
-    margin-top: 20px; /* Adjust spacing */
-  }
+.batcave-security {
+  position: absolute;
+  left: 5%;
+  bottom: 17%;
+}
 
-  .missions {
-    top: auto; /* Reset top positioning */
-  }
-
-  .gotham-news {
-    top: auto; /* Reset top positioning */
-  }
-
-  .voertuig, .computer, .armory, .villains {
-    position: relative; /* Reset positioning */
-    left: auto; /* Reset left positioning */
-    top: auto; /* Reset top positioning */
-    margin-top: 20px; /* Adjust spacing */
-  }
+.gadget-inventory {
+  position: absolute;
+  left: 5%;
+  bottom: 2%;
 }
