@@ -33,13 +33,14 @@ h1 {
 }
 
 .vehicle {
-    width: 600px;
-    height: 600px;
+    width: 100%; /* Take full width on smaller screens */
+    max-width: 600px; /* Limit width on larger screens */
     padding: 10px;
     border-radius: 8px;
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .vehicle:hover {
@@ -61,10 +62,11 @@ h1 {
 
 .vehicle img {
     width: 100%;
-    height: 60%;
+    height: auto;
     border: 4px solid #53a7e8;
-    object-fit: cover;
-    vertical-align: middle;
+    object-fit: cover; /* Ensures images maintain aspect ratio and cover the container */
+    vertical-align: middle; /* Aligns images vertically */
+    border-radius: 8px;
 }
 
 .modal {
