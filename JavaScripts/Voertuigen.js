@@ -2,21 +2,21 @@ const vehicles = [
     {
         name: "Batmobile",
         description: "The iconic car used by Batman, equipped with various gadgets and weapons.",
-        image: "../media/batmobile.png",
+        image: "./media/batmobile.png",
         batteryPercentage: "85%",
         otherDetails: "Reinforced armor, rocket launchers, stealth mode capabilities."
     },
     {
         name: "Batcycle",
         description: "A high-speed motorcycle used by Batman for agile pursuits and narrow escapes.",
-        image: "../media/batcycle.png",
+        image: "./media/batcycle.png",
         batteryPercentage: "69%",
         otherDetails: "Built-in grappling hook, night vision optics."
     },
     {
         name: "Arkham Mobile",
         description: "An advanced Batmobile designed for tactical operations in urban environments.",
-        image: "../media/Arkhammobile.png",
+        image: "./media/Arkhammobile.png",
         batteryPercentage: "92%",
         otherDetails: "AI-assisted navigation, deployable drones, advanced defensive systems."
     }
