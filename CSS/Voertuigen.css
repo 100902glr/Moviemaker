@@ -1,0 +1,121 @@
+/* General styles */
+body {
+    background-image: url("../media/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: (255,255,255,0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center; /* Center align container content */
+}
+
+h1 {
+    color: #333;
+}
+
+/* Vehicle container */
+.vehicle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.vehicle {
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+}
+
+.vehicle:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Light shadow on hover */
+}
+
+.vehicle h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.vehicle p {
+    margin-bottom: 10px; /* Increased margin for better separation */
+    font-size: 0.9em;
+    color: #777;
+}
+
+.vehicle img {
+    max-width: 100%; /* Ensure images resize to fit container */
+    display: block; /* Remove default spacing for inline elements */
+    margin: 0 auto; /* Center the image */
+    border-radius: 4px;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-image: url("../media/backgroundmodal.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    max-width: 700px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    text-align: left; /* Align text to left within modal */
+}
+
+.modal-content img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.modal-details {
+    margin-top: 20px;
+}
+
+.modal-details h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.modal-details p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.modal-details strong {
+    font-weight: bold;
+}
