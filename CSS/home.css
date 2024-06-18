@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 body {
     background-image: url(../media/background.png);
     background-repeat: no-repeat;
@@ -31,3 +32,52 @@ body {
 .voertuig:hover, .computer:hover, .armory:hover, .villains:hover {
     filter: drop-shadow(0px 0px 25px #0f1bbd);
 }
+
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0f0f;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+  }
+
+  .clock {
+    border: 2px solid #0075cc;
+    color: #53a7e8;
+    padding: 30px 50px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #121212, #1c1c1c);
+    box-shadow: 10px 10px 20px #0a0a0a, -10px -10px 20px #262626;
+    text-align: center;
+  }
+
+  #Date{
+    font-size: 20px !important;
+    margin-bottom: 10px;
+  }
+
+  .clock ul{
+    list-style: none;
+    display: flex;
+    font-size: 50px;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .clock ul li {
+    position: relative;
+    animation: glow 1.5s infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #0075cc, 0 0 10px #0075cc, 0 0 20px #0075cc, 0 0 30px #0075cc, 0 0 40px #0075cc, 0 0 50px #0075cc, 0 0 60px #0075cc;
+    }
+    to {
+      text-shadow: 0 0 10px #0075cc, 0 0 20px #0075cc, 0 0 30px #0075cc, 0 0 40px #0075cc, 0 0 50px #0075cc, 0 0 60px #0075cc, 0 0 70px #0075cc;
+    }
+  }
