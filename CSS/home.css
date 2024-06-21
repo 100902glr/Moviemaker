@@ -91,6 +91,8 @@ body {
     position: absolute;
     top: 5%;
     right: 2%;
+    height: 400px;
+    width: 400px;
 }
 
 .missions, .gotham-news, .gotham-weather, .batmobile-status, .crime-alerts, .bat-signal-status, .communication-logs, .batcave-security, .gadget-inventory {
@@ -197,4 +199,4 @@ body {
   position: absolute;
   left: 5%;
   bottom: 2%;
-}
+} 
